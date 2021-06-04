@@ -32,15 +32,17 @@ export default function Navbar() {
 
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-between">
                 <div className="flex-shrink-0 space-x-2 flex items-center">
-                  <img
-                    className="block lg:hidden h-8 w-8 rounded-full"
-                    src="/prasad-chinwal.jpeg" alt="Me"
-                  />
-                  <img
-                    className="hidden lg:block h-8 w-8 rounded-full"
-                    src="/prasad-chinwal.jpeg" alt="Me"
-                  />
-                  <span className="font-medium text-xl text-gray-300">Chinwal Prasad</span>
+                    <img
+                      className="block lg:hidden h-8 w-8 rounded-full"
+                      src="/prasad-chinwal.jpeg" alt="Me"
+                    />
+                    <img
+                      className="hidden lg:block h-8 w-8 rounded-full"
+                      src="/prasad-chinwal.jpeg" alt="Me"
+                    />
+                    <a href="/">
+                      <span className="font-medium text-xl text-gray-300">Chinwal Prasad</span>
+                    </a>
                 </div>
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4">

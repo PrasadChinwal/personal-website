@@ -10,6 +10,8 @@
   "dependencies": {
     "@headlessui/react": "^1.2.0",
     "@heroicons/react": "^1.0.1",
+    "@tailwindcss/forms": "^0.3.3",
+    "@tailwindcss/typography": "^0.4.1",
     "gray-matter": "^4.0.3",
     "next": "10.2.3",
     "react": "17.0.2",

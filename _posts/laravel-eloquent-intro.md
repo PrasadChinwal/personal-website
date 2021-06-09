@@ -1,7 +1,7 @@
 ---
 title: Laravel Eloquent introduction
 tags: ['laravel']
-slug: laravel-eloquent
+slug: laravel-eloquent-intro
 excerpt: 'Laravel Eloquent operations introduction'
 published: Jul 11 2020
 is_published: true
@@ -14,17 +14,23 @@ Laravel eloquent is an ActiveRecord implementation to interact with database. An
 
 ## Defining Models
 
-Laravel as a framework provides us with many artisan commands which can be executed on the command line to assist us with building application. You can see the list of commands available by running the command ``` php artisan list```.
+Laravel as a framework provides us with many artisan commands which can be executed on the command line to assist us with building application. You can see the list of commands available by running the command
+
+```bash
+php artisan list
+```
 
 To make a new model you can run the command below:
 
-``` php artisan make:model User```
+```bash
+php artisan make:model User
+```
 
 When run successfully this will create a file called ```User.php``` in the ``` app``` directory.
 
-When you open this file you can notice that this file extends the ``` Illuminate\Database\Eloquent\Model``` class, infact all the eloquent classes extend this base class.
+When you open this file you can notice that this file extends the ```Illuminate\Database\Eloquent\Model``` class, infact all the eloquent classes extend this base class.
 
-```php[User.php]
+```php
 <?php
 
 namespace App;
@@ -42,7 +48,7 @@ class User extends Model
 
 As you may have noticed we still haven't described the name of the table. By default Eloquent uses the ``` snake_case``` and pluralizes the name of the class and uses it as the table name. Ofcourse you can override this by overriding a property on the class.
 
-```php[User.php]
+```php
 <?php
 
 namespace App;
@@ -64,7 +70,7 @@ class User extends Model
 
 Just like we defined the table name by overriding a property on the eloquent class we can also override the primary key of the our table. By default Laravel uses the ```id``` as the primary key.
 
-```php[User.php]
+```php
 <?php
 
 namespace App;
@@ -86,7 +92,7 @@ class User extends Model
 
 If you build large applications which connect to 2 or more database by using different connections, you may want to explicitly specify the database connection on the Eloquent model. You can do this by overriding the ```connection``` property on the model.
 
-```php[User.php]
+```php
 <?php
 
 namespace App;

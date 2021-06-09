@@ -1,7 +1,7 @@
 ---
 title: Implementing Required If rule in Vuetify
 tags: ['vuetify']
-slug: implementing-required-if-in-vuetify
+slug: vuetify-required-if
 excerpt: 'Implementing Required If rule in Vuetify'
 published: Jul 12 2020
 is_published: true
@@ -16,7 +16,7 @@ Although these libraries are very popular and good, you maynot want to install a
 
 Let's get started with implementing the UI first. Here is our UI.
 
-```js{}[index.vue]
+```js
 <div id="app">
   <v-app>
     <v-content>
@@ -35,7 +35,7 @@ Let's get started with implementing the UI first. Here is our UI.
           </v-text-field>
           <v-row>
             <v-spacer></v-spacer>
-            <v-btn color="success" @click="validate">Submit</v-btn>
+            <v-btn color="success" @click="validate" >Submit</v-btn>
           </v-row>
         </v-form>
       </v-container>
@@ -48,7 +48,7 @@ Let's assume that we have 2 fields in our form first name and last name. What we
 
 Let's see the Javascript code for this:
 
-```js[index.js]
+```js
 new Vue({
   el: "#app",
   vuetify: new Vuetify(),

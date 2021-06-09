@@ -25,10 +25,10 @@ export default function Home( {allPosts} ) {
                 </span>
               </h1>
               <p className="mt-8 text-xl text-gray-500 leading-8">
-              I'm a developer, gamer, writer, and Manchester United fan. I'm currently building web apps and maintaining databases at Illinois PMP.
+              I'm a developer, gamer, writer, and Manchester United fan. I'm currently building web apps and maintaining databases at Illinois Prescription Monitoring Program.
               </p>
               <p className="mt-8 text-xl text-gray-500 leading-8">
-                In the past I worked as a Full Stack developer at University of Illinois Springfield. Where I helped built web apps for internal departments.
+                In the past I worked as a Full Stack developer at University of Illinois Springfield where I helped built web apps for internal departments.
               </p>
             </div>
           </div>

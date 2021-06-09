@@ -50,7 +50,7 @@ return (
                         <p className="mt-3 text-base text-gray-500" title="description">{post.excerpt}</p>
                     </a>
                     <div className="mt-3">
-                        <a href={post.slug} className="text-base font-semibold text-indigo-600 hover:text-indigo-500">
+                        <a href={"/posts/" + post.slug} className="text-base font-semibold text-indigo-600 hover:text-indigo-500">
                         Read full story
                         </a>
                     </div>

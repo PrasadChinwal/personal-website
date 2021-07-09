@@ -5,7 +5,7 @@ slug: vuetify-required-if
 excerpt: 'Implementing Required If rule in Vuetify'
 published: Jul 12 2020
 is_published: true
-cover: '/img/implementing_required_if_in_vuetify/cover.svg'
+cover: '/post_cover.svg'
 ---
 
 What are we learning? 💁‍♂️ So there have been times in my work where I was working on a project and it was required of me to implement validation. My team uses Vuetify, a Vue UI Library for frontend. Vuetify has a built in validator. You can also use third-party validation libraries such as Vee-Validate and Vuelidate.

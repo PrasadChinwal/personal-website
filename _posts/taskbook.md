@@ -5,8 +5,10 @@ slug: 'taskbook'
 excerpt: 'Tasks, boards & notes for the command-line habitat'
 published: May 23 2020
 is_published: true
-cover: '/imgages/taskbook/cover.png'
+cover: '/post_cover.svg'
 ---
+
+# Introduction
 
 By utilizing a simple and minimal usage syntax, that requires a flat learning curve, taskbook enables you to effectively manage your tasks and notes across multiple boards from within your terminal. All data are written atomically to the storage in order to prevent corruptions, and are never shared with anyone or anything. Deleted items are automatically archived and can be inspected or restored at any moment.
 
@@ -55,8 +57,6 @@ tb --task Read MyBook
 tb --task @books Read MyBook
 ```
 
-**IMAGE alternate="Task Created"**
-
 ### Create your first Note
 
 ```bash
@@ -79,7 +79,6 @@ Let's say I have started reading MyBook and I want to mark this task as in progr
 ```bash
 tb --begin task_id
 ```
-**IMAGE alternate="Task Progress"**
 
 #### Mark your task as done
 After a long and tiring read you finally finished your book and want to mark the task as done. All you need to is run:
@@ -87,8 +86,6 @@ After a long and tiring read you finally finished your book and want to mark the
 ```bash
 tb --begin task_id
 ```
-
-**IMAGE alternate="Task Done"**
 
 #### Delete your Completed Tasks
 
@@ -118,8 +115,6 @@ This option displays all saved items grouped into their respective boards.
 tb
 ```
 
-**IMAGE alternate="Task Done"**
-
 2. Timeline View
 
 This option displays all tasks in a timeline fashion, categorized by their creation date.
@@ -128,8 +123,6 @@ This option displays all tasks in a timeline fashion, categorized by their creat
 tb --timeline
 ```
 
-**IMAGE alternate="Task Done"**
-
 ## Conclusion
 
-Taskbook enables you to manage and track your tasks from command line. This helps you manage your tasks from terminal where we all developers spend our time. Having
+Taskbook enables you to manage and track your tasks from command line. This helps you manage your tasks from terminal where we all developers spend our time.

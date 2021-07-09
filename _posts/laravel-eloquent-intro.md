@@ -8,7 +8,7 @@ is_published: true
 cover: '/img/laravel_eloquent_intro/cover.svg'
 ---
 
-Laravel Eloquent introduction
+# Laravel Eloquent introduction
 
 Laravel eloquent is an ActiveRecord implementation to interact with database. An ActiveRecord is simply the 'M' - Model, in the MVC architecture. On Laravel documentation page Eloquent is described as Eloquent ORM (Object Relational Mapping system). To make this easy, you can think that each Model in your laravel application corresponds to a table in your database. Let's get started!
 

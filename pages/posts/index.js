@@ -16,8 +16,7 @@ export default function Home( {allPosts} ) {
                         <div>
                             <h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">From the Blog</h2>
                             <p className="mt-3 text-xl text-gray-500 sm:mt-4">
-                            Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus
-                            arcu.
+                            Things I have learnt and want to share with you all. I write about technical stuff and new tools.
                             </p>
                         </div>
                         <div className="mt-12 grid gap-16 pt-12 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">

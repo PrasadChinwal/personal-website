@@ -1,6 +1,7 @@
 import Layout from '../components/layout'
 import Head from 'next/head'
 import { LINKS } from '../lib/constants';
+import Link from 'next/link'
 
 const user = {
     name: 'Chinwal Prasad',
@@ -76,7 +77,13 @@ export default function About() {
                                     I like to learn new technologies and use them in production applications. Lately I have been spending a lot of time learning DevOps, in hopes of shifting my career towards DevOps. I am also working towards getting my AWS certification.
                                 </p>
                                 <p>
-                                In my free time I also like to read. Check out my books section to find out the books I have read and love.
+                                    In my free time I also like to
+                                    <Link href="/books">
+                                        <a className="mx-1 text-indigo-500 no-underline">
+                                            read
+                                        </a>
+                                    </Link>.
+                                    Check out my books section to find out the books I have read and love.
                                 </p>
                             </div>
                         </div>

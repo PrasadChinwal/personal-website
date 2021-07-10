@@ -1,6 +1,7 @@
 import Layout from '../../components/layout'
 import Head from 'next/head'
 import { getAllPosts } from '../../lib/api'
+import Link from "next/link"
 
 export default function Home( {allPosts} ) {
     return (
@@ -23,21 +24,25 @@ export default function Home( {allPosts} ) {
                             {allPosts.map((post) => (
                             <div key={post.title}>
                                 <div>
-                                    <a href="#" className="inline-block">
+                                    <a className="inline-block">
                                         <span className="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium">
                                         {post.category}
                                         </span>
                                     </a>
                                 </div>
-                                <a href={post.href} className="block mt-4">
-                                    <p className="text-xl font-semibold text-gray-900">{post.title}</p>
-                                    <p className="mt-3 text-base text-gray-500">{post.excerpt}</p>
-                                </a>
+                                <Link href={`/posts/${encodeURIComponent(post.slug)}`}>
+                                    <a className="block mt-4">
+                                        <p className="text-xl font-semibold text-gray-900">{post.title}</p>
+                                        <p className="mt-3 text-base text-gray-500">{post.excerpt}</p>
+                                    </a>
+                                </Link>
                                 <div className="mt-6 flex items-center">
                                     <div className="flex-shrink-0">
-                                        <a href={"/posts/" + post.slug} className="text-indigo-600 hover:text-indigo-900">
+                                        <Link href={`/posts/${encodeURIComponent(post.slug)}`}>
+                                        <a className="text-indigo-600 hover:text-indigo-900">
                                             Read More
                                         </a>
+                                        </Link>
                                     </div>
                                     <div className="ml-3">
                                         <p className="text-sm font-medium text-gray-900">

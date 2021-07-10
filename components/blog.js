@@ -1,3 +1,4 @@
+import Link from 'next/link'
 
 export default function Blog({allPosts}) {
 return (
@@ -12,14 +13,18 @@ return (
                     <p className="text-sm text-gray-500">
                         <time dateTime={post.published}>{post.published}</time>
                     </p>
-                    <a href={"/posts/" + post.slug} className="mt-2 block">
-                        <p className="text-xl font-semibold text-gray-900">{post.title}</p>
-                        <p className="mt-3 text-base text-gray-500" title="description">{post.excerpt}</p>
-                    </a>
-                    <div className="mt-3">
-                        <a href={"/posts/" + post.slug} className="text-base font-semibold text-indigo-600 hover:text-indigo-500">
-                        Read full story
+                    <Link href={"/posts/" + post.slug}>
+                        <a className="mt-2 block">
+                            <p className="text-xl font-semibold text-gray-900">{post.title}</p>
+                            <p className="mt-3 text-base text-gray-500" title="description">{post.excerpt}</p>
                         </a>
+                    </Link>
+                    <div className="mt-3">
+                        <Link href={"/posts/" + post.slug}>
+                            <a className="text-base font-semibold text-indigo-600 hover:text-indigo-500">
+                            Read full story
+                            </a>
+                        </Link>
                     </div>
                 </div>
             ))}

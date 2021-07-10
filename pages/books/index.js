@@ -1,7 +1,7 @@
 import Layout from '../../components/layout'
 import { StarIcon, BookOpenIcon } from '@heroicons/react/solid'
 import Head from 'next/head'
-import { books } from './booklist';
+import { books } from '../../lib/booklist';
 
 export default function Books() {
   return (
